@@ -37,7 +37,7 @@ export default function Login() {
                 {error && <p>{error}</p>}
                 <div>
                     <div className={styles.username}>
-                        <label htmlFor="username">Username:</label>
+                        <label htmlFor="username">username:</label>
                         <input id="username" type="text" placeholder='username' value={username} onChange={handleUsername} required />
                     </div>
                 
