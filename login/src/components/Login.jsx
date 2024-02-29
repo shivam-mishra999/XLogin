@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import styles from "./Login.module.css";
 
 export default function Login() {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+    const [username, setUsername] = useState();
+    const [password, setPassword] = useState();
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState("");
 
