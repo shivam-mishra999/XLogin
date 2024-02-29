@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import styles from "./Login.module.css";
 
 export default function Login() {
-    const [username, setUsername] = useState();
-    const [password, setPassword] = useState();
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState("");
 
@@ -43,7 +43,7 @@ export default function Login() {
                 
                     <div className={styles.password}>
                         <label htmlFor="password">Password:</label>
-                        <input id="password" type="text" placeholder="password" value={password} onChange={handlePassword} required />
+                        <input id="password" type="password" placeholder="password" value={password} onChange={handlePassword} required />
                     </div>
 
                     <div className={styles.button}>
