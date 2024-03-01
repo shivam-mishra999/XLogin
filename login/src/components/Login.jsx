@@ -31,14 +31,14 @@ export default function Login() {
     <div className={styles.login}>
         <h1>Login Page</h1>
         {submitted ? (
-            <p>Welcome, {username}</p>
+            <p>Welcome, {username}!</p>
         ) : (
             <form onSubmit={handleSubmit}>
                 {error && <p>{error}</p>}
                 <div>
                     <div className={styles.username}>
-                        <label htmlFor="username">username:</label>
-                        <input id="username" type="text" placeholder='username' value={username} onChange={handleUsername} required />
+                        <label htmlFor="username">Username:</label>
+                        <input id="username" type="text" placeholder="username" value={username} onChange={handleUsername} required />
                     </div>
                 
                     <div className={styles.password}>
